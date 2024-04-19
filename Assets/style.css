@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: linear-gradient(to right, rgb(237, 182, 182), rgb(176, 176, 243)); */
+}
+
+.lifecycle {
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/Images/Header\ Image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+aside {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+}
+
+.about-info h2 {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.about-text p {
+    margin: 0;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info h2 {
+    font-weight: bold;
+}
+
+.contact-links {
+    width: 70%;
+}
+
+.contact-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-links ul li {
+    margin-right: 20px;
+}
+
+.contact-links ul li:last-child {
+    margin-right: 0;
+}
+
+.contact-links ul li span {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.contact-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.project-container {
+    display: flex;
+    justify-content: flex-end; 
+    position: relative; 
+}
+
+.project-item {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.project-content {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: right; 
+}
+
+.project-item img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-overlay {
+    position: absolute;
+    /* top: 50%;
+    right: -2; Position the button to the right */
+    transform: translate(5%, -50%);
+    /* opacity: 1;  */
+}
+
+.github-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #24292e;
+    text-decoration: none;
+    border: 2px solid #24292e;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    opacity: 0;
+}
+
+.project-overlay:hover .github-button,
+.github-button:hover {
+    opacity: 1; 
+}
+
+.github-button:hover {
+    background-color: #24292e;
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
